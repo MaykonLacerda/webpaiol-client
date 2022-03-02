@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables";
+
+.home-page {
+  height: 100%;
+
+  .options {
+    display: flex;
+
+    a {
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: $borderRadius;
+      border-left: 8px solid $palletColor1;
+      background: $palletColor4;
+      color: $palletColor2;
+      box-shadow: $lightShadow;
+      padding: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+
+      &:hover {
+        outline: 1.2px solid $palletColor1;
+      }
+    }
+  }
+}

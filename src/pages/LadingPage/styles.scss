@@ -1,0 +1,19 @@
+@import "../../assets/styles/variables";
+
+.landing-page {
+  height: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      margin-bottom: 1rem;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}

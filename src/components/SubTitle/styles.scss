@@ -1,0 +1,12 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/devices";
+
+.sub-title {
+  margin: $separatorTopDesktop 0 1rem;
+
+  .text {
+    font-size: 1.4rem;
+    color: $palletColor1;
+    opacity: $textOpacity;
+  }
+}

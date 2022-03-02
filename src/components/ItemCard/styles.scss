@@ -1,0 +1,99 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/devices";
+
+.item-card {
+  display: flex;
+  align-items: center;
+  background: $palletColor4;
+  box-shadow: $lightShadow;
+  border-radius: $bigBorderRadius;
+  border-left: 8px solid $palletColor1;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  height: 5.5rem;
+  
+  p {
+    color: $palletColor2 !important;
+  }
+
+  .avatar {
+    background: $palletColor2;
+    height: 65%;
+    width: 4rem;
+    margin-right: 1rem;
+    box-shadow: $lightShadow;
+  }
+
+  .info {
+    :nth-child(1) {
+      font-size: 1.4rem;
+    }
+    :nth-child(2) {
+      font-size: 1.2rem;
+      opacity: .8;
+    }
+    :nth-child(3) {
+      font-size: 0.9rem;
+      opacity: .7;
+    }
+  }
+
+  .actions {
+    margin-left: auto;
+
+    .mobile {
+      margin-top: -45px;
+      margin-right: -23px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    outline: 2px solid $palletColor1;
+  }
+}
+
+.desktop-actions {
+  display: flex;
+  height: 100%;
+
+  &__button {
+    display: flex;
+    padding: 0.5rem;
+    background: $palletColor1;
+    border-radius: $borderRadius;
+    margin-left: 1rem;
+
+    svg {
+      color: $white;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      outline: 1.2px solid $palletColor2;
+
+      svg {
+        color: $palletColor2;
+      }
+    }
+  }
+}
+
+.mobile-actions {
+  height: 100%;
+
+  svg {
+    color: $palletColor2;
+  }
+
+  &__item {
+    display: flex;
+
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}

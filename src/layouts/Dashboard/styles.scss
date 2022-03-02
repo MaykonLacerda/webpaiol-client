@@ -1,0 +1,121 @@
+@import "../../assets/styles/variables";
+
+.dashboard-layout {
+  display: flex;
+  height: 100%;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $palletColor1;
+    transition: 0.3s;
+    overflow: hidden;
+
+    .menu-icon {
+      margin-right: 1.4rem;
+      margin-top: 0.4rem;
+      width: 100%;
+      text-align: end;
+
+      svg {
+        color: $white;
+        min-height: 50px;
+        min-width: 50px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .menu-content {
+      width: 100%;
+
+      * {
+        color: white;
+      }
+
+      .menu-options-list {
+        a {
+          text-decoration: none;
+
+          div {
+            padding-left: 0.3rem;
+          }
+
+          > div > div {
+            padding: 0.3rem 0 0.3rem 0.4rem;
+          }
+        }
+
+        .menu-options-icon {
+          justify-content: center;
+          margin-right: 0.7rem;
+
+          svg {
+            min-width: 30px;
+            min-height: 30px;
+          }
+        }
+
+        .menu-options-text {
+          span {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .expansive {
+    width: 380px;
+  }
+
+  .compact {
+    width: 80px;
+  }
+
+  .right {
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: $mobileDown) {
+  .dashboard-layout {
+    display: flex;
+    flex-direction: column;
+
+    .menu {
+      position: absolute;
+      z-index: 9999;
+    }
+
+    .compact {
+      background: none;
+
+      .menu-icon {
+        svg {
+          color: $palletColor1 !important;
+        }
+      }
+
+      .menu-content {
+        display: none;
+      }
+
+      .right {
+        padding: 5rem 1.5rem 3rem;
+        height: 100%;
+      }
+    }
+
+    .expansive {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables";
+
+.side-by-side-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  height: 100%;
+  
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: $mobileDown) {
+  .side-by-side-layout {
+    display: flex;
+    flex-direction: column;
+
+    .left {
+      height: 20%;
+    }
+
+    .right {
+      padding: 3rem 1.5rem;
+      height: 80%;
+    }
+  }
+}

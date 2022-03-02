@@ -1,0 +1,14 @@
+@import "../../assets/styles/variables";
+
+.data-list-template {
+  width: 100%;
+  .top-actions {
+    display: flex;
+    justify-content: flex-end;
+    color: $palletColor1;
+
+    & svg:hover {
+      cursor: pointer;
+    }
+  }
+}

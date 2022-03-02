@@ -1,0 +1,26 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/devices";
+
+.page-title {
+  margin: $separatorTopDesktop 0 1rem;
+
+  .title {
+    font-size: 2rem;
+    color: $palletColor1;
+  }
+
+  p {
+    color: $palletColor1;
+    letter-spacing: 2px;
+    opacity: .6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  @include tablet {
+    margin-top: $separatorTopMobile
+  }
+}

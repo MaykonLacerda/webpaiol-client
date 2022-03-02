@@ -1,0 +1,37 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/devices";
+
+.confirm-modal {
+  max-width: 350px;
+  
+  &__head {
+    width: 100%;
+    background: $palletColor1;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem 0;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    
+    p {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &__buttons {
+      display: flex;
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

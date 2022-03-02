@@ -1,0 +1,57 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/devices";
+
+.overviews {
+  border-radius: $borderRadius;
+  padding: 1rem 0;
+
+  p {
+    color: $palletColor1;
+  }
+
+  &__workers {
+    display: grid;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding: 0 0 1rem;
+
+    &__quantity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    &__charts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto 1rem;
+
+      p {
+        color: $palletColor3;
+      }
+    }
+  }
+
+  &__payments {
+    margin-top: 1rem;
+  }
+
+  @include tablet-landscape {
+    &__workers {
+      display: flex;
+      flex-direction: column;
+      box-shadow: $lightShadow;
+      border-radius: $bigBorderRadius;  
+
+      &__quantity {
+        background: $palletColor1;
+        
+        p {
+          color: $palletColor2;
+        }
+      }
+    }
+  }
+}
